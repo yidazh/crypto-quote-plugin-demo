@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "url": "https://crypto-quote-plugin-demo.vercel.app/api/crypto-quote",
+      "name": "query-crypto-quote",
+      "description": "query the quote price of crypto currency according to the symbol provided by the user",
+      "parameters": {
+        "properties": {
+          "symbol": {
+            "description": "crypto currency symbol",
+            "type": "string"
+          }
+        },
+        "required": ["symbol"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "yidazh",
+  "createdAt": "2024-01-03",
+  "homepage": "https://github.com/yidazh/crypto-quote-plugin-demo",
+  "identifier": "crypto-quote",
+  "meta": {
+    "avatar": "🚀",
+    "tags": ["crypto"],
+    "title": "Crypto Quote",
+    "description": ""
+  },
+  "version": "1"
+}
